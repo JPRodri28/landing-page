@@ -57,30 +57,38 @@ main {
 }
 
 .titulos-mostrados-no-menu {
-    left: 23.01%;
-    right: 68.47%;
-    top: 4.33%;
-    bottom: 92.93%;
     background-color: #FFFFFF;
     color: #7D5AC2;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 900;
-    padding: 30px 40px;
+    padding: 20px 30px;
 }
 
-.container-portifolio {
+section {
     background-color: #333333;
+    padding-bottom: 40px;
+
 }
 
-#h2-video {
-    text-align: center;
+.containers {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
     color: #FFFFFF;
 }
 
-#imagem-ilustrativa-video {
-    margin-left: 270px;
+.h3 {
+    text-align: center;
     padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 16px;
+}
+
+#video-ilustrativo {
+    margin-left: 260px;
 }
 
 footer {

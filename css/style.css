@@ -9,23 +9,23 @@ body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
 }
 
 header {
-    background: #999999;
-    padding: 20px 0;
+    background: #7D5AC2;
+    padding: 0;
 }
 
 .container {
     position: relative;
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
 }
 
 #logo-titulo {
-    width: 20%;
+    width: 10%;
 }
 
 nav {
     position: absolute;
-    top: 84.5px;
+    top: 50px;
     right: 0;
 }
 
@@ -41,7 +41,7 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #7D5AC2;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
@@ -53,9 +53,24 @@ nav a:hover {
 }
 
 main {
-    background-color: black;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 0;
+}
+
+.titulos-mostrados-no-menu {
+    left: 23.01%;
+    right: 68.47%;
+    top: 4.33%;
+    bottom: 92.93%;
+    background-color: #FFFFFF;
+    color: #7D5AC2;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 30px 40px;
+}
+
+.container-portifolio {
+    background-color: #333333;
 }
 
 #h2-video {
@@ -70,14 +85,14 @@ main {
 
 footer {
     text-align: center;
-    background-color: #999999;
+    background-color: #7D5AC2;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
 .copyrigth {
-    color: #444444;
+    color: #FFFFFF;
     font-size: 13px;
     padding: 20px 0 0;
-    vertical-align;
+    vertical-align: middle;
 }

@@ -6,12 +6,12 @@ function expandir() {
     if (pontos.style.display === "none") {
         pontos.style.display = "inline";
         maisTexto.style.display = "none";
-        btnseta.innerHTML = "Leia Mais";
+        btnseta.innerHTML = "⬇";
         
     }else{
         pontos.style.display = "none";
         maisTexto.style.display = "inline";
-        btnseta.innerHTML = "Leia Menos";
+        btnseta.innerHTML = "⬆";
     }
     
 }

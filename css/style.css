@@ -94,6 +94,16 @@ section {
     margin-left: 260px;
 }
 
+section .containers ul li {
+    display: inline 
+}
+
+.imagem {
+  
+width: 20%
+
+}
+
 footer {
     text-align: center;
     background-color: #7D5AC2;

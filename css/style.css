@@ -7,6 +7,9 @@ body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
+#mais{
+    display: none;
+}
 
 header {
     background: #7D5AC2;

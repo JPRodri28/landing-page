@@ -1,4 +1,4 @@
-body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
+body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,h3,footer{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -116,16 +116,14 @@ section {
 }
 
 .containers ul {
-    display: inline-block
+    display: flex;
 }
 
 .imagem {
 width: 245px;
 height: 250px;
+margin: 20px;
 }
-
-
-
 
 footer {
     text-align: center;

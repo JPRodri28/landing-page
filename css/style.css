@@ -1,4 +1,4 @@
-body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
+body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,h3,footer{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,6 +7,11 @@ body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 #mais{
     display: none;
 }
@@ -15,7 +20,28 @@ header {
     background: #7D5AC2;
     padding: 0;
 }
+.scrollTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #FFF url(../img/up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0,5s;
 
+}
+.scrollTop.active{
+    visibility: visible;
+    opacity: 1;
+}
 .container {
     position: relative;
     width: 90%;
@@ -92,6 +118,16 @@ section {
 
 #video-ilustrativo {
     margin-left: 260px;
+}
+
+.containers ul {
+    display: flex;
+}
+
+.imagem {
+width: 245px;
+height: 250px;
+margin: 20px;
 }
 
 footer {

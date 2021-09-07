@@ -54,7 +54,7 @@ header {
 
 nav {
     position: absolute;
-    top: 50px;
+    top: 3em;
     right: 0;
 }
 
@@ -65,7 +65,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 1em;
 }
 
 nav a {
@@ -73,7 +73,7 @@ nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 nav a:hover {
@@ -85,19 +85,59 @@ main {
     padding: 0;
 }
 
+footer {
+    text-align: center;
+    background-color: #7D5AC2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.copyrigth {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 20px 0 0;
+    vertical-align: middle;
+}
+
+/* 
+====================================================================================================================================
+
+<main>
+
+====================================================================================================================================
+*/
+
 .titulos-mostrados-no-menu {
-    background-color: #FFFFFF;
+    background-color: #333333;
     color: #7D5AC2;
     font-family: Roboto;
     font-size: 25px;
     font-weight: 900;
     padding: 20px 30px;
+    border-right: 10px solid #7D5AC2;
+    border-left: 10px solid #7D5AC2;
 }
 
 section {
-    background-color: #333333;
     padding-bottom: 40px;
+    border-right: 10px solid #7D5AC2;
+    border-left: 10px solid #7D5AC2;
+}
 
+.portifolio {
+    background-color: #141414;
+}
+
+.sobre {
+    background-color: #141414;
+}
+
+.brain-storm {
+    background-color: #141414;
+}
+
+.contatos {
+    background-color: #141414;
 }
 
 .containers {
@@ -116,30 +156,11 @@ section {
     line-height: 16px;
 }
 
-#video-ilustrativo {
-    margin-left: 260px;
-}
-
 .containers ul {
-    display: flex;
+    display: inline-flex
 }
 
 .imagem {
-width: 245px;
-height: 250px;
+width: 75%;
 margin: 20px;
-}
-
-footer {
-    text-align: center;
-    background-color: #7D5AC2;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-.copyrigth {
-    color: #FFFFFF;
-    font-size: 13px;
-    padding: 20px 0 0;
-    vertical-align: middle;
 }

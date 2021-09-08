@@ -267,4 +267,9 @@ RESPONSIVIDADE COM MOBILE
     li {
         text-align: center;
     }
+
+    section {
+        border-right: 10px solid #7D5AC2;
+        border-left: 10px solid #7D5AC2;
+    }
 }

@@ -121,8 +121,8 @@ footer {
 
 section {
     padding-bottom: 40px;
-    border-right: 10px solid #7D5AC2;
-    border-left: 10px solid #7D5AC2;
+    border-right: 20px solid #7D5AC2;
+    border-left: 20px solid #7D5AC2;
 }
 
 #portifolio {
@@ -148,13 +148,19 @@ section {
     color: #FFFFFF;
 }
 
-.h3 {
+.containers-inframe {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h3 {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
     font-weight: 900;
     font-size: 25px;
     line-height: 16px;
+    color: #FFFFFF;
 }
 
 .video-brain-storm {
@@ -169,6 +175,10 @@ section {
 .imagem {
     width: 75%;
     margin: 20px;
+}
+
+li {
+    text-align: center;
 }
 
 summary{
@@ -212,6 +222,14 @@ details p {
     margin: 0 0 1rem;
     padding-top: 1rem;
 }
+
+/*
+===============================================================================================================================
+
+RESPONSIVIDADE COM MOBILE
+
+===============================================================================================================================
+*/
 
 @media screen and (max-width: 480px) {
     .container {

@@ -243,14 +243,10 @@ animation-duration: 1.5s;
     color: #FFFFFF;
 }
 
-<<<<<<< HEAD
-
-=======
 .containers-inframe {
     width: 60%;
     margin: 0 auto;
 }
->>>>>>> d7df08c195ab7cb7d909a6f486cb383c80332a45
 
 h3 {
     text-align: center;
@@ -371,4 +367,12 @@ RESPONSIVIDADE COM MOBILE
         border-right: 10px solid #7D5AC2;
         border-left: 10px solid #7D5AC2;
     }
+}
+
+#brainstorm {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    
+
 }

@@ -122,6 +122,7 @@ section {
 #portifolio {
     background-color: #141414;
 }
+
 .slideshow-conteiner {
     box-sizing: border-box;
     max-width: 1000px;
@@ -131,8 +132,8 @@ section {
 
 .mySlidefade {
     display: none;
-
 }
+
 .prev , .next {
     cursor: pointer;
     position: absolute;
@@ -145,11 +146,12 @@ section {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-
 }
+
 #botao {
     text-align: center;
     position: relative;
@@ -172,6 +174,7 @@ section {
 .ativo, .ponto:hover {
     background-color: #000000;
 }
+
 .fade {
 -webkit-animation-name: fade;
 -webkit-animation-duration: 1.5s;
@@ -193,11 +196,11 @@ animation-duration: 1.5s;
       margin-left: auto;
       margin-right: auto;
       display: block;
- }
+    }
 
  .h3 {
      color:#bbb;
- }
+    }
 
  .subtitulo {
      
@@ -317,6 +320,10 @@ details p {
     margin: 20px;
 
 }
+
+#brainstorm {
+    height: 400px;
+}
 /*
 ===============================================================================================================================
 
@@ -351,6 +358,10 @@ RESPONSIVIDADE COM MOBILE
     .containers-inframe {
         width: 80%;
         margin: 0 auto;
+    }
+
+    #brainstorm {
+        height: 315px;
     }
 
     .containers ul {

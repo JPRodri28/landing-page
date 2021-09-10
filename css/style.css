@@ -171,7 +171,7 @@ section {
     
 }
 
-.ativo, .ponto:hover {
+.active, .ponto:hover {
     background-color: #000000;
 }
 

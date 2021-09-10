@@ -1,4 +1,4 @@
-body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
+body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,h3,footer{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,6 +7,11 @@ body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 #mais{
     display: none;
 }
@@ -16,19 +21,43 @@ header {
     padding: 0;
 }
 
+.scrollTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #FFF url(../img/up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0,5s;
+
+}
+
+.scrollTop.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 .container {
     position: relative;
     width: 90%;
     margin: 0 auto;
 }
 
-#logo-titulo {
+.logo-titulo {
     width: 10%;
 }
 
 nav {
     position: absolute;
-    top: 50px;
+    top: 3em;
     right: 0;
 }
 
@@ -39,7 +68,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 1em;
 }
 
 nav a {
@@ -47,7 +76,7 @@ nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 nav a:hover {
@@ -57,41 +86,6 @@ nav a:hover {
 
 main {
     padding: 0;
-}
-
-.titulos-mostrados-no-menu {
-    background-color: #FFFFFF;
-    color: #7D5AC2;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 900;
-    padding: 20px 30px;
-}
-
-section {
-    background-color: #333333;
-    padding-bottom: 40px;
-
-}
-
-.containers {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    color: #FFFFFF;
-}
-
-.h3 {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 16px;
-}
-
-#video-ilustrativo {
-    margin-left: 260px;
 }
 
 footer {
@@ -106,4 +100,286 @@ footer {
     font-size: 13px;
     padding: 20px 0 0;
     vertical-align: middle;
+}
+
+.titulos-mostrados-no-menu {
+    background-color: #333333;
+    color: #7D5AC2;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 30px;
+    border-right: 10px solid #7D5AC2;
+    border-left: 10px solid #7D5AC2;
+}
+
+section {
+    padding-bottom: 40px;
+    border-right: 20px solid #7D5AC2;
+    border-left: 20px solid #7D5AC2;
+}
+
+#portifolio {
+    background-color: #141414;
+}
+
+.slideshow-conteiner {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlidefade {
+    display: none;
+}
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#botao {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+.ponto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    
+}
+
+.active, .ponto:hover {
+    background-color: #000000;
+}
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .video-ilustrativo {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+ .h3 {
+     color:#bbb;
+    }
+
+ .subtitulo {
+     
+     color: #bbb;
+     text-align: center;
+     position:relative;
+     bottom: 10px;
+     
+ }
+#sobre {
+    background-color: #141414;
+}
+
+#brain-storm {
+    background-color: #141414;
+
+}
+#brainstorm {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#contatos {
+    background-color: #141414;
+}
+
+.containers {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.containers-inframe {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+ #inframe-brain-storm {
+        padding-top: 2em;
+}
+
+.containers ul {
+    display: inline-flex
+}
+
+.imagem {
+    width: 75%;
+    margin: 20px;
+}
+
+li {
+    text-align: center;
+}
+
+summary{
+    list-style: none;
+}
+
+details summary {
+    width: 100%;
+    padding: 0.5rem 0;  
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 300;
+    list-style: none;
+}
+
+details summary:after {
+    content: "+";
+    color: white;
+    position: relative;
+    font-size: 100%;
+    line-height: 0;
+    margin-top: 100%;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200s linear;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep{
+    from{
+        opacity: 0; margin-top: -10px;
+    }
+    to{
+        opacity: 1; margin-top: 0;
+    }
+}
+
+details summary {
+    outline: 0;
+}
+
+details p {
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+}
+
+.redes-sociais{
+    width: 35px;
+    margin: 20px;
+
+}
+
+#brainstorm {
+    height: 400px;
+}
+/*
+===============================================================================================================================
+
+RESPONSIVIDADE COM MOBILE
+
+===============================================================================================================================
+*/
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 2em 0;
+    }
+
+    .container a {
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .cabecalho-menu{
+        position: static;
+    }
+
+    h1, h2 {
+        text-align: center;
+    } 
+    
+    .logo-titulo {
+        width: 50%;
+    }
+
+    .containers-inframe {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #brainstorm {
+        height: 315px;
+    }
+
+    .containers ul {
+        display: block;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    section {
+        border-right: 10px solid #7D5AC2;
+        border-left: 10px solid #7D5AC2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container a {
+        font-size: 1em;
+    }
+    
 }
